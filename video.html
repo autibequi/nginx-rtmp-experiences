@@ -1,0 +1,18 @@
+<head>
+    <link href="https://vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.0/video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-flash@2/dist/videojs-flash.min.js"></script>
+</head>
+
+<body>
+    <video
+        id="my-player"
+        class="video-js"
+        controls
+        height="400"
+        preload="auto"
+        data-setup='{ "techorder" : ["flash", "html5"] }'
+    >
+        <source src="rtmp://localhost/vod/&mp4:sample.mp4" type="rtmp/mp4"/>
+    </video>
+</body>
