@@ -68,3 +68,6 @@ To enable nginx to access the mounted s3fs you must define the same user on ngin
 If you try to access via `http` nginx will download the whole file before sending it to the user (i think).
 
 Using RTMP the stream will start right away.
+
+## Creatins HLS
+ffmpeg -i sample.mp4 -profile:v baseline -level 3.0 -s 640x360 -start_number 0 -hls_time 10 -hls_list_size 0 -f hls sample.m3u8
