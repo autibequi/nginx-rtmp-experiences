@@ -8,6 +8,7 @@ services:
       - .:/stream/
       - /build/
       - /usr/bin/
+      - /home/autibequi/.aws:/root/.aws
     ports:
      - "1935:1935"
      - "3000:3000"
