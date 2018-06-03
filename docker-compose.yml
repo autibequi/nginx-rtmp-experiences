@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: stream
+    command: tail -f /dev/null
+    volumes:
+      - .:/stream
+    ports:
+     - "1935:1935"
+     - "3000:3000"
