@@ -20,6 +20,7 @@ chmod +x /usr/bin/goofys
 
 # Install Supervisor
 apt install -y supervisor
+mkdir -p /var/log/supervisord/
 
 # Install NPM
 apt install -y npm 
