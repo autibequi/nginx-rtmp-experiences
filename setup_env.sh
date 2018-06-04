@@ -18,3 +18,8 @@ apt install -y fuse syslog-ng
 wget bit.ly/goofys-latest -O /usr/bin/goofys
 chmod +x /usr/bin/goofys
 
+# Install Supervisor
+apt install -y supervisor
+
+# Install NPM
+apt install -y npm 
