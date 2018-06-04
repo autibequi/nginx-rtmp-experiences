@@ -4,7 +4,7 @@ services:
     build: .
     privileged: true
     container_name: stream
-    command: tail -f /dev/null
+    entrypoint: tail -f /dev/null
     environment:
       - AWS_ACCESS_KEY_ID
       - AWS_SESSION_TOKEN
