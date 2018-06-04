@@ -30,7 +30,8 @@ cd nginx-source
     --with-cc-opt='-O3' \
     --with-http_ssl_module \
     --prefix=/usr/local/nginx \
-    --with-http_stub_status_module 
+    --with-http_stub_status_module \
+    --with-http_auth_request_module
 
 # Build
 make
