@@ -11,6 +11,10 @@ apt install -y python-pip
 # Install AWSCLI
 pip install awscli
 
+# Install Dependencies for Goofys
+apt install -y fuse syslog-ng
+
 # Install Goofys
 wget bit.ly/goofys-latest -O /usr/bin/goofys
 chmod +x /usr/bin/goofys
+
